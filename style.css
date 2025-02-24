@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.annonse-container {
+    display:flex;
+    gap:1rem;
+   
+}
+
+.annonse-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 262px;
+    background-color: orange;
+    
+}
+
+.varnr-enhet-wrapper, .logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.tilbud-box {
+    flex-grow: 1;
+    min-width: 50%;
+    background-color: whitesmoke;
+    padding:1rem;
+}
+
+.tilbud-image {
+    max-width: 40%;
+}
+
+.tilbud-image img {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.produkt-pris {
+	font-size: 3rem; /* Stor pris */
+	font-weight: bold;
+	color: #ececec; /* Sort tekst for kontrast */
+	background: #be0f0f; /* Hvit bakgrunn */
+	padding: 10px 20px;
+	border-radius: 8px;
+	display: inline-block;
+	position: relative;
+  
+}
+/* 79.90 desimal 90 */
+.decimal {
+	font-size: 1.7rem; /* Større desimaler */
+	vertical-align: top;
+	position: relative;
+    left:5%;
+}
+/* pr kg */
+.per-kg {
+	font-size: 1rem;
+	font-weight: 400;
+	position: absolute;
+	left: 87px;
+	top: 41px;
+	transform: translateX(-50%);
+	white-space: nowrap;
+    color:white;
+    border-top: #ececec 1px solid;
+    padding: 1px 0px;
+}
+
+/*   -----  ------  ------- */
+/* Generell styling for teksten */
+p {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Styling for kampanjetekst */
+.kampanje {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #e63946; /* Rød farge for å fremheve */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Produktnavn */
+.produkt-navn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d3557; /* Mørk blå */
+    margin-top: 10px;
+}
+
+/* Varenummer */
+.produkt-varnr,
+.produkt-enhet {
+    font-size: 14px;
+    color: #6c757d; /* Lys grå */
+}
+
+/* Rabattperiode */
+.rabatt-tid {
+    font-size: 12px;
+    font-weight: 300;
+    color: #f1faee; /* Lys bakgrunn med mørk tekst */
+    background-color: #be0f0f;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* Logoene */
+.matkammeret-logo,
+.innk-logo {
+    font-size: 14px;
+    color: #333;
+    max-width: 100px;
+    height: auto;
+   
+}
+
+/* Justering for innhold i et fleksibelt grid for visning */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Småjusteringer for responsivitet */
+@media (max-width: 768px) {
+    .produkt-pris {
+        font-size: 24px;
+    }
+    .kampanje {
+        font-size: 14px;
+    }
+    .produkt-navn {
+        font-size: 18px;
+    }
+}
+
