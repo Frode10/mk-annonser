@@ -9,23 +9,43 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height:100%;
+    padding: 2rem;
 }
 
 .annonse-container {
     display:flex;
-    gap:1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-bottom: 2rem;
    
 }
 
 .annonse-wrapper {
     display: flex;
     flex-direction: row;
+    width: 100%;
     width: 500px;
     height: 262px;
     background-color: orange;
+    border-radius: 12px;
+
     
 }
+
+/* ANNONSE */
+.annonse-wrapper2 {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 315px;
+    background-color: orange;
+    border-radius: 12px;
+
+    
+}
+
 
 .varnr-enhet-wrapper, .logo-wrapper {
     display: flex;
