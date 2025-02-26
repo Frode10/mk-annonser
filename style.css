@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    width: 500px;
+    max-width: 500px;
     height: 262px;
     background-color: orange;
     border-radius: 12px;
@@ -38,7 +38,7 @@ body {
 .annonse-wrapper2 {
     display: flex;
     flex-direction: row;
-    width: 600px;
+    width: 100%;
     height: 315px;
     background-color: orange;
     border-radius: 12px;
@@ -57,8 +57,10 @@ body {
 .tilbud-box {
     flex-grow: 1;
     min-width: 50%;
-    background-color: whitesmoke;
+    background-color: rgb(213, 208, 241);
     padding:1rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .tilbud-image {
@@ -70,6 +72,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
+
 }
 
 
@@ -117,7 +121,7 @@ p {
 
 /* Styling for kampanjetekst */
 .kampanje {
-    font-size: 14px;
+    font-size: clamp(1.2rem, 15vw, 2.5rem);
     font-weight: bolder;
     color: #e63946; /* Rød farge for å fremheve */
     text-transform: uppercase;
@@ -126,11 +130,12 @@ p {
 
 /* Produktnavn */
 .produkt-navn {
-    font-size: 20px;
+    font-size: clamp(1.2rem, 15vw, 2.5rem);
     font-weight: bold;
     color: #1d3557; /* Mørk blå */
     margin-top: 10px;
 }
+
 
 /* Varenummer */
 .produkt-varnr,
@@ -166,20 +171,9 @@ p {
    
 }
 
-/* Justering for innhold i et fleksibelt grid for visning */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f4f8;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
-/* Småjusteringer for responsivitet */
+
+/* Småjusteringer for responsivitet 
 @media (max-width: 768px) {
     .produkt-pris {
         font-size: 24px;
@@ -191,4 +185,4 @@ p {
         font-size: 18px;
     }
 }
-
+*/
